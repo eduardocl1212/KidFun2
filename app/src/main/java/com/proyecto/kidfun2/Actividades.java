@@ -19,6 +19,11 @@ public class Actividades extends AppCompatActivity {
            Intent Actividad = new Intent(this, adivinaPalabra.class);
            startActivity(Actividad);
         }
+        else if(select.equals("ing")){
+            finish();
+            Intent Actividad = new Intent(this, adivinaPalabraIngles.class);
+            startActivity(Actividad);
+        }
         else{
             Toast.makeText(this, "Pendiente", Toast.LENGTH_SHORT).show();
             finish();

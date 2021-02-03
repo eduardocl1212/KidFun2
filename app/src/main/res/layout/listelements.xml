@@ -13,6 +13,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:background="@drawable/bgcolor"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
         android:orientation="vertical">
@@ -24,35 +25,37 @@
 
             <ImageView
                 android:id="@+id/iconViewer"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:paddingLeft="14dp"
                 android:paddingRight="14dp"
                 app:srcCompat="@drawable/ic_gitbook"
                 tools:ignore="VectorDrawableCompat"/>
+
             <LinearLayout
                 android:id="@+id/LinearLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="18dp"
                 android:layout_toEndOf="@+id/iconViewer"
-                android:orientation="vertical"
-                android:layout_marginLeft="4dp"
-                android:layout_toRightOf="@id/iconViewer">
+                android:layout_toRightOf="@id/iconViewer"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nameActivity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Actividad 1"
                     android:textColor="@color/black"
-                    android:textSize="24sp"
+                    android:textSize="28sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/DescActivity"
                     android:layout_width="match_parent"
@@ -60,19 +63,18 @@
                     android:layout_marginBottom="2dp"
                     android:text="Actividad 1"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                     />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <TextView
-                android:text="Hola"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="29dp"
-                android:visibility="invisible"
-                android:layout_marginEnd="42dp" />
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="24dp"
+                android:text="Hola"
+                android:visibility="invisible" />
 
         </RelativeLayout>
 

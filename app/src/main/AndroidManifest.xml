@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidFun2">
         <activity android:name=".adivinaPalabra"></activity>
+        <activity android:name=".adivinaPalabraIngles"></activity>
         <activity android:name=".Actividades" />
         <activity android:name=".MainActivity">
             <intent-filter>

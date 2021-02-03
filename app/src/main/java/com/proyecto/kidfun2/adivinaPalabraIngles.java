@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
-public class adivinaPalabra extends AppCompatActivity {
+public class adivinaPalabraIngles extends AppCompatActivity{
     TextView txtPalabraAdivinar, txtLetrasIntentadas, txtIntentosRestantes;
     String Palabra, comparadorString, LetrasIntentadas= " ", IntentosRestantes = " X X X X";
     char[] comparador;
@@ -60,7 +60,7 @@ public class adivinaPalabra extends AppCompatActivity {
             }
         });
 
-       Letras.addTextChangedListener(new TextWatcher() {
+        Letras.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -119,7 +119,7 @@ public class adivinaPalabra extends AppCompatActivity {
 
         db = FirebaseDatabase.getInstance();
 
-        DatabaseReference reference = db.getReference().child("Palabras");
+        DatabaseReference reference = db.getReference().child("PalabrasEN");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

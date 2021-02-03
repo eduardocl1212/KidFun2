@@ -5,13 +5,23 @@ public class ListElement {
     public String actividad;
     public String Descripcion;
     public String select;
+    private String photoURL;
 
-    public ListElement(String color, String actividad, String descripcion, String select) {
+    public ListElement(String color, String actividad, String descripcion, String select, String photoURL) {
         this.color = color;
         this.actividad = actividad;
         this.Descripcion = descripcion;
         this.select = select;
+        this.photoURL = photoURL;
      }
+
+    public String getPhotoURL() {
+        return photoURL;
+    }
+
+    public void setPhotoURL(String photoURL) {
+        this.photoURL = photoURL;
+    }
 
     public String getColor() {
         return color;
